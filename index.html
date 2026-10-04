@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Home | Coffee Cafe</title>
+    <title>Home | Coffee Cafe Test Website</title>
     <meta name="description" content="Slow coffee for a fast world. Small-batch roasts, brewed to order." />
     <link rel="stylesheet" href="styles.css" />
 </head>
@@ -34,23 +34,23 @@
         </div>
     </header>
 
-    <main id="main" tabindex="1">
+    <main id="main" tabindex="-1">
         <div class="wrap">
-            <!--PHOTOS: each <div class="photo"> marks where an image goes. Its text is the alt text.
-                To add a photo, replace the div with <img src="..." alt="(that text)" width height>. -->
+            <!-- PHOTOS: each <div class="photo"> marks where an image goes. Its text is the alt text.
+             To add a photo, replace the div with <img src="..." alt="(that text)" width height>. -->
 
             <section class="hero" aria-labelledby="hero-heading">
                 <div>
                     <h1 id="hero-heading">Slow coffee for a fast world</h1>
                     <p>Small-batch roasts, brewed to order, in a room built for staying a while.</p>
-                    <a class="photo" href="menu.html">View Menu</a>
+                    <a class="btn" href="menu.html">View Menu</a>
                 </div>
                 <div class="photo">Image: Barista slowly pouring hot water over coffee grounds in a pour-over dripper on
                     a
                     wooden counter</div>
             </section>
 
-            <section aria-labelledby="feature-heading">
+            <section aria-labelledby="featured-heading">
                 <h2 id="featured-heading">Featured Drinks</h2>
                 <ul class="cards">
                     <li>
@@ -71,7 +71,7 @@
                             </div>
                             <div>
                                 <h3>Cold Brew Float</h3>
-                                <p>Cold brew coffee over vanilla ice cream</p>
+                                <p>Cold brew over vanilla ice cream</p>
                                 <p class="price">$5.75</p>
                             </div>
                         </article>
@@ -81,7 +81,7 @@
                             <div class="photo">Image: Small glass of cortado dusted with ground cardamom</div>
                             <div>
                                 <h3>Cardamom Cortado</h3>
-                                <p>Esporesso, cardamom syrup</p>
+                                <p>Espresso, cardamom syrup</p>
                                 <p class="price">$4.95</p>
                             </div>
                         </article>
@@ -107,7 +107,7 @@
             <div class="grid footer-desktop">
                 <section>
                     <h2>Hours</h2>
-                    <p>Mon-Fri 7:00 AM-6:00 PM<br />Sat-Sun 8:00 AM-5:00 PM</p>
+                    <p>Mon-Fri 7:00-18:00<br />Sat-Sun 8:00-17:00</p>
                 </section>
 
                 <section>
@@ -119,7 +119,7 @@
                     <h2>Newsletter</h2>
                     <form action="#">
                         <label for="newsletter-desktop">Email address</label>
-                        <input id="newsletter-desktop" type="email" autocomplete="email" required />
+                        <input id="newsletter-desktop" name="email" type="email" autocomplete="email" required />
                         <button class="btn accent" type="submit">Subscribe</button>
                     </form>
                 </section>
@@ -136,7 +136,7 @@
             <div class="footer-mobile">
                 <details>
                     <summary>Hours</summary>
-                    <p>Mon-Fri 7:00 AM-6:00 PM<br />Sat-Sun 8:00 AM-5:00 PM</p>
+                    <p>Mon-Fri 7:00-18:00<br />Sat-Sun 8:00-17:00</p>
                 </details>
 
                 <details>
