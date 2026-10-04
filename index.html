@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home | Coffee Cafe</title>
+    <meta name="description" content="Slow coffee for a fast world. Small-batch roasts, brewed to order." />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site">
+        <div class="wrap">
+            <a class="brand" href="index.html">
+                Coffee Cafe
+            </a>
+
+            <input class="nav-check vh" type="checkbox" id="nav-check" aria-label="Open navigation menu" />
+            <label class="menu-toggle" for="nav-check" aria-hidden="true">Menu</label>
+
+            <nav id="site-nav" aria-label="Main">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="our-story.html">Our Story</a></li>
+                    <li><a href="visit.html">Visit</a></li>
+                </ul>
+            </nav>
+
+            <a class="btn" href="https://order.example.com/">Order Ahead</a>
+        </div>
+    </header>
+
+    <main id="main" tabindex="1">
+        <div class="wrap">
+            <!--PHOTOS: each <div class="photo"> marks where an image goes. Its text is the alt text.
+                To add a photo, replace the div with <img src="..." alt="(that text)" width height>. -->
+
+            <section class="hero" aria-labelledby="hero-heading">
+                <div>
+                    <h1 id="hero-heading">Slow coffee for a fast world</h1>
+                    <p>Small-batch roasts, brewed to order, in a room built for staying a while.</p>
+                    <a class="photo" href="menu.html">View Menu</a>
+                </div>
+                <div class="photo">Image: Barista slowly pouring hot water over coffee grounds in a pour-over dripper on
+                    a
+                    wooden counter</div>
+            </section>
+
+            <section aria-labelledby="feature-heading">
+                <h2 id="featured-heading">Featured Drinks</h2>
+                <ul class="cards">
+                    <li>
+                        <article class="card">
+                            <div class="photo">Image: Latte in a ceramic mug with a thin line of honey drizzled over the
+                                foam</div>
+                            <div>
+                                <h3>Honey Oat Latte</h3>
+                                <p>Oat milk, wildflower honey</p>
+                                <p class="price">$5.25</p>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="card">
+                            <div class="photo">Image: Tall glass of cold brew topped with a scoop of vanilla ice cream
+                                and a straw
+                            </div>
+                            <div>
+                                <h3>Cold Brew Float</h3>
+                                <p>Cold brew coffee over vanilla ice cream</p>
+                                <p class="price">$5.75</p>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="card">
+                            <div class="photo">Image: Small glass of cortado dusted with ground cardamom</div>
+                            <div>
+                                <h3>Cardamom Cortado</h3>
+                                <p>Esporesso, cardamom syrup</p>
+                                <p class="price">$4.95</p>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="story" aria-labelledby="story-heading">
+                <div class="photo">Image: Coffee roaster and burlap sacks of green beans inside the cafe's neighborhood
+                    roastery
+                </div>
+                <div>
+                    <h2 id="story-heading">Our Story</h2>
+                    <p>Roasted three blocks from here. A short note on sourcing and our neighborhood roastery.</p>
+                    <p><a href="our-story.html">Read our full story</a></p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site">
+        <div class="wrap">
+            <div class="grid footer-desktop">
+                <section>
+                    <h2>Hours</h2>
+                    <p>Mon-Fri 7:00 AM-6:00 PM<br />Sat-Sun 8:00 AM-5:00 PM</p>
+                </section>
+
+                <section>
+                    <h2>Location</h2>
+                    <p><a href="visit.html#map">412 Elm Street</a></p>
+                </section>
+
+                <section>
+                    <h2>Newsletter</h2>
+                    <form action="#">
+                        <label for="newsletter-desktop">Email address</label>
+                        <input id="newsletter-desktop" type="email" autocomplete="email" required />
+                        <button class="btn accent" type="submit">Subscribe</button>
+                    </form>
+                </section>
+
+                <section>
+                    <h2>Social</h2>
+                    <p>
+                        <a href="https://instagram.com/">Instagram</a>
+                        <a href="https://facebook.com/">Facebook</a>
+                    </p>
+                </section>
+            </div>
+
+            <div class="footer-mobile">
+                <details>
+                    <summary>Hours</summary>
+                    <p>Mon-Fri 7:00 AM-6:00 PM<br />Sat-Sun 8:00 AM-5:00 PM</p>
+                </details>
+
+                <details>
+                    <summary>Location</summary>
+                    <p><a href="visit.html#map">412 Elm Street</a></p>
+                </details>
+
+                <details>
+                    <summary>Newsletter</summary>
+                    <form action="#">
+                        <label for="newsletter-mobile">Email address</label>
+                        <input id="newsletter-mobile" name="email" type="email" autocomplete="email" required />
+                        <button class="btn accent" type="submit">Subscribe</button>
+                    </form>
+                </details>
+
+                <details>
+                    <summary>Social</summary>
+                    <p>
+                        <a href="https://instagram.com/">Instagram</a>
+                        <a href="https://facebook.com/">Facebook</a>
+                    </p>
+                </details>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
