@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Our Story | Coffee Cafe</title>
+    <meta nam="description" content="How Coffee Cafe roasts, brews and belongs to the neighborhood." />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site">
+        <div class="wrap">
+            <a class="brand" href="index.html">
+                Coffee Cafe
+            </a>
+
+            <input class="nav-check vh" type="checkbox" id="nav-check" aria-label="Open navigation menu" />
+            <label class="menu-toggle" for="nav-check" aria-hidden="true">Menu</label>
+
+            <nav id="site-nav" aria-label="Main">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="our-story.html" aria-current="page">Our Story</a></li>
+                    <li><a href="visit.html">Visit</a></li>
+                </ul>
+            </nav>
+
+            <a class="btn" href="https://order.example.com/">Order Ahead</a>
+        </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+        <div class="wrap">
+            <!-- PHOTOS: each <div class="photo"> marks where an image goes. Its text is the alt text.
+                 To add a photo, replace the div with <img src="..." alt="(that text)" width height>. -->
+            <h1>Our Story</h1>
+
+            <section class="story" aria-labelledby="approach-heading">
+                <div class="photo">Image: Barista handing a freshly made drink across the counter to a smiling customer
+                </div>
+                <div>
+                    <h2 id="approach-heading">Our approach to coffee</h2>
+                    <p>
+                        We roast in small batches and brew to order, because good coffee shouldn't be rushed.
+                        "Slow coffee for a fast world" is the promise behind every cup.
+                    </p>
+                </div>
+            </section>
+
+            <section aria-labelledby="community-heading">
+                <h2 id="community-heading">Part of the neighborhood</h2>
+                <p>Coffee Cafe is a place to study, work, and catch up with friends.</p>
+                <a class="btn" href="menu.html">View Menu</a>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site">
+        <div class="wrap">
+            <div class="grid footer-desktop">
+                <section>
+                    <h2>Hours</h2>
+                    <p>Mon-Fri 7:00 AM-6:00 PM<br />Sat-Sun 8:00 AM-5:00 PM</p>
+                </section>
+
+                <section>
+                    <h2>Location</h2>
+                    <p><a href="visit.html#map">412 Elm Street</a></p>
+                </section>
+
+                <section>
+                    <h2>Newsletter</h2>
+                    <form action="#">
+                        <label for="newsletter-desktop">Email address</label>
+                        <input id="newsletter-desktop" name="email" type="email" autocomplete="email" required />
+                        <button class="btn accent" type="submit">Subscribe</button>
+                    </form>
+                    <section>
+                        <h2>Social</h2>
+                        <p>
+                            <a href="https://instagram.com/">Instagram</a>
+                            <a href="https://facebook.com/">Facebook</a>
+                        </p>
+                    </section>
+            </div>
+
+            <div class="footer-mobile"></div>
+        <details>
+          <summary>Hours</summary>
+          <p>Mon-Fri 7:00-18:00<br />Sat-Sun 8:00-17:00</p>
+        </details>
+
+        <details>
+          <summary>Location</summary>
+          <p><a href="visit.html#map">412 Elm Street</a></p>
+        </details>
+
+        <details>
+          <summary>Newsletter</summary>
+          <form action="#">
+            <label for="newsletter-mobile">Email address</label>
+            <input id="newsletter-mobile" name="email" type="email" autocomplete="email" required />
+            <button class="btn accent" type="submit">Subscribe</button>
+          </form>
+        </details>
+
+        <details>
+          <summary>Social</summary>
+          <p>
+            <a href="https://instagram.com/">Instagram</a>
+            <a href="https://facebook.com/">Facebook</a>
+          </p>
+        </details>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
