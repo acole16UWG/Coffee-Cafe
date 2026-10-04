@@ -1,3 +1,4 @@
+
 :root {
     --ink: #2B1A10;
     --cream: #F7F0E1;
@@ -84,13 +85,22 @@ header.site .wrap {
 }
 
 .brand {
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: var(--ink);
+    display: flex; 
+    align-items: center; 
+    gap: 0.5rem; 
+    font-family: Georgia, 
+    "Times New Roman", serif; font-size: 1.4rem; 
+    font-weight: 700; 
+    line-height: 1.2; 
+    color: var(--ink); 
     text-decoration: none;
+}
+
+.brand-icon { 
+    width: 52px; 
+    height: 52px; 
+    object-fit: contain; 
+    flex-shrink: 0; 
 }
 
 nav ul {
@@ -119,23 +129,48 @@ nav a[aria-current=page] {
     border-bottom: 3px solid var(--burnt);
 }
 
+/* Image styling */
 .photo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 110px;
-    padding: 1rem;
-    border: 2px dashed var(--brown);
-    background: #e8dcc4;
-    color: var(--ink);
-    font-size: 0.9rem;
-    text-align: center;
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
-.hero .photo,
-.story .photo,
+/* Hero layout */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    margin-block: 1rem 3rem;
+}
+
+.hero > .photo {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+/* Featured drink images */
+.card > .photo {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Story and map images */
+.story > .photo,
 .map .photo {
-    min-height: 240px;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center;
 }
 
 .btn {
@@ -179,17 +214,23 @@ main {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.25rem;
     padding: 0;
     list-style: none;
+}
+
+.cards > li {
+    min-width: 0;
 }
 
 .card {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+    height: 100%;
     border: 2px solid var(--brown);
+    border-radius: 10px;
     padding: 1rem;
     background: #fffaf0;
 }
@@ -248,17 +289,13 @@ label {
 
 textarea {
     width: 100%;
-    min-height: 44px;
+    min-height: 140px;
     padding: .6rem;
     border: 2px solid var(--ink);
     border-radius: 4px;
     background: #fff;
     font: inherit;
     color: var(--ink);
-}
-
-textarea {
-    min-height: 140px;
 }
 
 footer.site {
@@ -301,7 +338,7 @@ footer.site input {
     }
 
     nav {
-        width: 100%
+        width: 100%;
     }
 
     nav ul {
@@ -312,6 +349,10 @@ footer.site input {
     .story,
     .visit {
         grid-template-columns: 1fr;
+    }
+
+    .hero > .photo {
+        aspect-ratio: 4 / 3;
     }
 
     .cards {
@@ -331,7 +372,7 @@ footer.site input {
     cursor: pointer;
 }
 
-.nav-check:focus-visible+.menu-toggle {
+.nav-check:focus-visible + .menu-toggle {
     outline: 3px solid var(--blue);
     outline-offset: 2px;
     box-shadow: 0 0 0 6px var(--cream);
@@ -356,13 +397,13 @@ footer.site input {
     cursor: pointer;
 }
 
-.chip-input:checked+.chip {
+.chip-input:checked + .chip {
     background: var(--orange);
     border-color: var(--ink);
     font-weight: 700;
 }
 
-.chip-input:focus-visible+.chip {
+.chip-input:focus-visible + .chip {
     outline: 3px solid var(--blue);
     outline-offset: 2px;
     box-shadow: 0 0 0 6px var(--cream);
@@ -382,8 +423,8 @@ main:has(#filter-seasonal:checked) [data-cat]:not([data-cat="seasonal"]) {
     font-weight: 700;
 }
 
-input:user-invalid~.error,
-textarea:user-invalid~.error {
+input:user-invalid ~ .error,
+textarea:user-invalid ~ .error {
     display: block;
 }
 
@@ -438,7 +479,7 @@ textarea:user-invalid {
         display: none;
     }
 
-    .nav-check:checked~nav {
+    .nav-check:checked ~ nav {
         display: block;
     }
 
