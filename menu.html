@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Menu | Coffee Cafe</title>
+    <meta name="description" content="Browse coffee, tea, pastries and seasonal items." />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site">
+        <div class="wrap">
+            <a class="brand" href="index.html">
+                Coffee Cafe
+            </a>
+
+            <input class="nav-check vh" type="checkbox" id="nav-check" aria-label="Open navigation menu" />
+            <label class="menu-toggle" for="nav-check" aria-hidden="true">Menu</label>
+
+            <nav id="site-nav" aria-label="Main">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html" aria-current="page">Menu</a></li>
+                    <li><a href="our-story.html">Our Story</a></li>
+                    <li><a href="visit.html">Visit</a></li>
+                </ul>
+            </nav>
+
+            <a class="btn" href="https://order.example.com/">Order Ahead</a>
+        </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+        <div class="wrap">
+            <!-- PHOTOS: each <div class="photo"> marks where an image goes. Its text is the alt text.
+                 To add a photo, replace the div with <img src="..." alt="(that text)" width height>. -->
+            <h1>Menu</h1>
+
+            <fieldset class="chips">
+                <legend class="vh">Filter menu by category</legend>
+                <input class="chip-input vh" type="radio" name="category" id="filter-all" checked />
+                <label class="chip" for="filter-all">All</label>
+                <input class="chip-input vh" type="radio" name="category" id="filter-coffee" />
+                <label class="chip" for="filter-coffee">Coffee</label>
+                <input class="chip-input vh" type="radio" name="category" id="filter-tea" />
+                <label class="chip" for="filter-tea">Tea</label>
+                <input class="chip-input vh" type="radio" name="category" id="filter-pastries" />
+                <label class="chip" for="filter-pastries">Pastries</label>
+                <input class="chip-input vh" type="radio" name="category" id="filter-seasonal" />
+                <label class="chip" for="filter-seasonal">Seasonal</label>
+            </fieldset>
+
+            <section data-cat="coffee" aria-labelledby="cat-coffee">
+                <h2 id="cat-coffee">Coffee</h2>
+                <ul class="cards">
+                    <li>
+                        <article class="card">
+                            <div class="photo">Image: Steaming mug of black drip coffee on a wooden table</div>
+                            <div>
+                                <h3>Drip Coffee</h3>
+                                <p>House blend, hot or iced</p>
+                                <p class="price">$3.25</p>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="card">
+                            <div class="photo">Image: Latte in a ceramic mug with a thin line of honey drizzled over the
+                                foam</div>
+                            <div>
+                                <h3>Honey Oat Latte</h3>
+                                <p>Oat milk, wildflower honey</p>
+                                <p class="price">$5.25</p>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="card">
+                            <div class="photo">Image: Small glass of cortado dusted with ground cardamom</div>
+                            <div>
+                                <h3>Cardamom Cortado</h3>
+                                <p>Espresso, cardamom syrup</p>
+                                <p class="price">$4.95</p>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="card">
+                            <div class="photo">Image: Tall glass of cold brew topped with a scoop of vanilla ice cream
+                                and a straw
+                            </div>
+                            <div>
+                                <h3>Cold Brew Float</h3>
+                                <p>Cold brew over vanilla ice cream</p>
+                                <p class="price">$5.75</p>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+
+            <section data-cat="tea" aria-labelledby="cat-tea">
+                <h2 id="cat-tea">Tea</h2>
+                <ul class="cards">
+                    <li>
+                        <article class="card">
+                            <div class="photo">Image: Cup of pale golden chamomile tea with dried flowers and a small
+                                jar of honey
+                                beside it</div>
+                            <div>
+                                <h3>Chamomile Tea</h3>
+                                <p>Loose leaf, honey on request</p>
+                                <p class="price">$3.75</p>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+
+            <section data-cat="pastries" aria-labelledby="cat-pastries">
+                <h2 id="cat-pastries">Pastries</h2>
+                <ul class="cards">
+                    <li>
+                        <article class="card">
+                            <div class="photo">Image: Golden almond croissant dusted with powdered sugar and sliced
+                                almonds</div>
+                            <div>
+                                <h3>Almond Croissant</h3>
+                                <p>Baked daily</p>
+                                <p class="price">$4.50</p>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+
+            <section data-cat="seasonal" aria-labelledby="cat-seasonal">
+                <h2 id="cat-seasonal">Seasonal</h2>
+                <ul class="cards">
+                    <li>
+                        <article class="card">
+                            <div class="photo">Image: Pumpkin scone with a light glaze on a small plate</div>
+                            <div>
+                                <h3>Pumpkin Scone</h3>
+                                <p>Seasonal, contains nuts</p>
+                                <p class="price">$3.95</p>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site">
+        <div class="wrap">
+            <div class="grid footer-desktop">
+                <section>
+                    <h2>Hours</h2>
+                    <p>Mon-Fri 7:00 AM - 6:00 PM<br /> Sat-Sun 8:00 AM - 5:00 PM</p>
+                </section>
+
+                <section>
+                    <h2>Location</h2>
+                    <p><a href="visit.html#map">412 Elm Street</a></p>
+                </section>
+
+                <section>
+                    <h2>Newsletter</h2>
+                    <form action="#">
+                        <label for="newsletter-desktop">Email address</label>
+                        <input id="newsletter-desktop" name="email" type="email" autocomplete="email" required />
+                        <button class="btn accent" type="submit">Subscribe</button>
+                    </form>
+                </section>
+
+                <section>
+                    <h2>Social</h2>
+                    <p>
+                        <a href="https://instagram.com/">Instagram</a>
+                        <a href="https://facebook.com/">Facebook</a>
+                    </p>
+                </section>
+            </div>
+
+            <div class="footer-mobile">
+                <details>
+                    <summary>Hours</summary>
+                    <p>Mon-Fri 7:00-18:00<br />Sat-Sun 8:00-17:00</p>
+                </details>
+
+                <details>
+                    <summary>Location</summary>
+                    <p><a href="visit.html#map">412 Elm Street</a></p>
+                </details>
+
+                <details>
+                    <summary>Newsletter</summary>
+                    <form action="#">
+                        <label for="newsletter-mobile">Email address</label>
+                        <input id="newsletter-mobile" name="email" type="email" autocomplete="email" required />
+                        <button class="btn accent" type="submit">Subscribe</button>
+                    </form>
+                </details>
+
+                <details>
+                    <summary>Social</summary>
+                    <p>
+                        <a href="https://instagram.com/">Instagram</a>
+                        <a href="https://facebook.com/">Facebook</a>
+                    </p>
+                </details>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
